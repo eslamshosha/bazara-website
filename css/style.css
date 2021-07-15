@@ -552,6 +552,7 @@ html[dir=rtl] .nav-header li:last-of-type{
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+    width: 100%;
 }
 .details-box{
     text-align: center;
