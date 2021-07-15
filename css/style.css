@@ -1319,6 +1319,9 @@ html[dir=rtl] .newsletter-input{
     .header-caption .figure-main {
         clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
     }
+    .header-scroll-down-butt{
+        bottom: 80px;
+    }
     /*                      header-caption                        */
 
     /*                               about us section                    */
