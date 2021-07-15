@@ -197,6 +197,7 @@ header {
 .nav-header li{
     margin-right: 25px;
 }
+html[dir=rtl] .nav-header li.dropdown li,
 .nav-header li.dropdown li{
     margin: 0;
 }
