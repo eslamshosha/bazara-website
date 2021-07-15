@@ -23,7 +23,7 @@ $(document).ready(function() {
        });
 
 	   //dropdown inside menu
-	   $('.cat-li.dropdown .cat-anchor, .lang-word').click(function (e) {
+	   $('.cat-li.dropdown .cat-anchor, .lang-word, .navgition .dropdown>a').click(function (e) {
 		e.preventDefault()
 		var item =  $(this).siblings(".dropdown-content");
 		item.slideToggle(500);

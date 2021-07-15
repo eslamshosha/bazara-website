@@ -1156,9 +1156,6 @@ html[dir=rtl] .newsletter-input{
         display: none;
         transition: none;
     }
-    /* .navgition .dropdown>a:hover .navgition .dropdown-content{
-        display: block;
-    } */
     .nav-header figure{
         width: 183px;
     }
