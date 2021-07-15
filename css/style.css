@@ -463,6 +463,7 @@ html[dir=rtl] .nav-header li:last-of-type{
     display: block;
     text-decoration: none;
     transition: 0.3s;
+    position: relative;
 }    
 .box-link .box-cont {
     position: relative;
@@ -592,6 +593,7 @@ html[dir=rtl] .nav-header li:last-of-type{
     margin: 0 auto;
     padding-bottom: 71.75%;
     position: relative;
+    overflow: hidden;
 }
 .details-box .image-details .simpleParallax{
     width: fit-content;
