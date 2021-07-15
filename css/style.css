@@ -523,6 +523,8 @@ html[dir=rtl] .nav-header li:last-of-type{
     color: #fff;
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: center;
 }
 /*                         box section                         */
 /*                       image-details section                    */
