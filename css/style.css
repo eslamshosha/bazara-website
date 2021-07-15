@@ -505,8 +505,12 @@ html[dir=rtl] .nav-header li:last-of-type{
 .box-link .box-caption {
     padding: 24px 34px 32px;
     text-align: center;
+    align-items: center;
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     z-index: 2;
 }
 .box-link .box-h {
@@ -522,7 +526,7 @@ html[dir=rtl] .nav-header li:last-of-type{
     font-family: "TajawalRegular";
     color: #fff;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: justify;
     text-align-last: center;
 }
@@ -979,7 +983,6 @@ html[dir=rtl] .second-footer .social-link:last-of-type{
 }
 .second-footer .social{
     margin-top: 16px;
-    transform: translateX(-10%);
     position: relative;
 }
 .second-footer .social::after{
@@ -994,9 +997,6 @@ html[dir=rtl] .second-footer .social-link:last-of-type{
 }
 html[dir=rtl] .second-footer .social::after{
     left: 52%;
-}
-html[dir=rtl] .second-footer .social{
-    transform: translateX(10%);
 }
 .newsletter{
     text-align: center;
@@ -1125,10 +1125,6 @@ html[dir=rtl] .newsletter-input{
         color: #292a5e;
         background-color: #dfeaf8;
     }
-    html[dir=rtl] .menu-bars{
-        margin-left: 26px;
-        margin-right: 0;
-    }
     .navgition {
         display: block;
         position: fixed;
@@ -1137,7 +1133,7 @@ html[dir=rtl] .newsletter-input{
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(3, 30, 77, .9);
+        background-color: rgb(3, 30, 77, .969);
         transition: .4s;
         z-index: 200;
         opacity: 0;
@@ -1173,7 +1169,7 @@ html[dir=rtl] .newsletter-input{
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 50px 25px 0;
+        padding: 20px 0 18px;
     }
     .nav-head .first-head{
         display: flex;
@@ -1186,12 +1182,10 @@ html[dir=rtl] .newsletter-input{
     .nav-head img{
         width: 183px;
         filter : brightness(0) invert(1);
-        flex: 1;
     }
     .nav-head .close-btn {
         color: #fff;
         font-size: 24px;
-        flex: 1;
         text-align: start;
     }
     .nav-header .big-menu {
@@ -1309,6 +1303,10 @@ html[dir=rtl] .newsletter-input{
    
     /*                    menu in phone size                      */
     /*                      header-caption                        */
+    .header-caption .figure-main {
+        padding-bottom: unset;
+        height: 600px;
+    }
     .header-caption .main-content .main-h{
         font-size: 30px;
     }
@@ -1374,7 +1372,7 @@ html[dir=rtl] .newsletter-input{
         width: 100%;
     }
     .details-slider .swiper-pagination {
-        bottom: 23px;
+        bottom: auto;
     }
     /*                            deatail section                        */
     /*                          big image section                        */
