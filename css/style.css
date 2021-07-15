@@ -100,6 +100,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+.nav-header .dropdown>a::after,
 .chevron-down::after {
     content: "\e874";
     font-family: "Linearicons-Free";
@@ -107,11 +108,12 @@ body {
     margin-left: 4px;
     font-weight: bold;
 }
+html[dir=rtl] .nav-header .dropdown>a::after,
 html[dir=rtl] .chevron-down::after{
     margin-left: 0px;
     margin-right: 4px;
 }
-
+.nav-header .dropdown>a:hover,
 .chevron-down:hover {
     color: #286090;
 }
@@ -146,14 +148,16 @@ header {
     filter: brightness(0) invert(1) ;
 }
 .nav-header li a,
-.nav-header .lang-word{
+.nav-header .lang-word
+.nav-header .dropdown>a{
     color: #fff;
     font-size: 17px;
     font-family: "TajawalMedium";
     transition: all 0.3s ease-in-out;
 }
 .nav-header li a:hover,
-.nav-header .lang-word:hover{
+.nav-header .lang-word:hover,
+.nav-header .dropdown>a:hover{
     color: #286090;
 }
 .nav-header .dropdown-content a {
@@ -192,6 +196,9 @@ header {
 
 .nav-header li{
     margin-right: 25px;
+}
+.nav-header li.dropdown li{
+    margin: 0;
 }
 html[dir=rtl] .nav-header li{
     margin-right: 0;
@@ -1116,6 +1123,32 @@ html[dir=rtl] .newsletter-input{
     .lang-section{
         display: none;
     }
+    .lang-section.hide-big{
+        display: block;
+        text-align: center;
+    }
+    .lang-section.hide-big .lang-word{
+        font-size: 17px;
+        font-family: "TajawalMedium";
+    }
+    .lang-section.hide-big img{
+        display: none;
+    }
+    .nav-header .dropdown>a:hover,
+    .chevron-down:hover {
+        color: #fff;
+    }
+    .navgition .dropdown-content {
+        background-color: transparent;
+        text-align: center;
+        position: relative;
+        min-width: 100%;
+        padding: 10px 15px;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
     .show-icons{
         display: block;
     }
@@ -1123,6 +1156,9 @@ html[dir=rtl] .newsletter-input{
         display: none;
         transition: none;
     }
+    /* .navgition .dropdown>a:hover .navgition .dropdown-content{
+        display: block;
+    } */
     .nav-header figure{
         width: 183px;
     }
@@ -1148,6 +1184,8 @@ html[dir=rtl] .newsletter-input{
     .navgition {
         display: block;
         position: fixed;
+        padding: 30px;
+        padding-top: 0;
         left: 0px;
         top: 0;
         bottom: 0;
@@ -1176,9 +1214,6 @@ html[dir=rtl] .newsletter-input{
     }
     header .contact-info{
         display: none;
-    }
-    .hide-big{
-        display: block;
     }
     .nav-head {
         display: flex;
@@ -1212,7 +1247,6 @@ html[dir=rtl] .newsletter-input{
         display: block;
         flex-direction: column;
         text-align: left;
-        padding: 30px;
         align-items: baseline; 
              
     }
