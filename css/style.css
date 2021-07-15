@@ -119,7 +119,7 @@ html[dir=rtl] .chevron-down::after{
 /*top header*/
 header {
     position: relative;
-    margin-bottom: 78px;
+    /* margin-bottom: 78px; */
 }
 .top-header a{
     text-decoration: none;
@@ -389,19 +389,25 @@ html[dir=rtl] .nav-header li:last-of-type{
 
 
 /*                         about us section                    */
+.about-section{
+    overflow: hidden;
+    position: relative;
+}
+
 .about-us{
     text-align: center;
     padding: 0 85px;
     position: relative;
     margin-bottom: 70px;
+    padding-top: 78px;
 }
 /*    image before about us*/
-.about-us::before{
+.about-section::before{
     content: "";
     background: url(../images/flower2.png);
     position: absolute;
-    top: -63%;
-    left: -15%;
+    top: -29%;
+    left: -8%;
     width: 456px;
     height: 444px;
     z-index: -1;
@@ -458,8 +464,10 @@ html[dir=rtl] .nav-header li:last-of-type{
 
 /*                         about us section                    */
 /*                         box section                         */
+.box-section{
+    margin-bottom: 95px;
+}
 .box-link {
-    margin-bottom: 30px;
     display: block;
     text-decoration: none;
     transition: 0.3s;
@@ -535,6 +543,15 @@ html[dir=rtl] .nav-header li:last-of-type{
 /*                       image-details section                    */
 .section-details{
     overflow: hidden;
+    position: relative;
+}
+.details-head{
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
 }
 .details-box{
     text-align: center;
@@ -542,7 +559,7 @@ html[dir=rtl] .nav-header li:last-of-type{
 }
 .details-box .details-cont{
     height: 532px;
-    padding: 70px 200px 0;
+    padding: 261px 200px 0;
     background-color: #f5f6f7;
     clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
     position: relative;
@@ -555,10 +572,10 @@ html[dir=rtl] .nav-header li:last-of-type{
     transform: translateX(-50%);
 }
 
-.details-box .section-logo{
+.details-head .section-logo{
     margin-bottom: 20px;
 }
-.details-box .details-h{
+.details-head .details-h{
     font-size: 30px;
     font-family: "TajawalBold";
     color: #00355f;
@@ -566,7 +583,7 @@ html[dir=rtl] .nav-header li:last-of-type{
     margin-bottom: 80px;
     position: relative;
 }
-.details-box .details-h::after {
+.details-head .details-h::after {
     content: "";
     background: #DCE2E8;
     width: 1px;
@@ -1325,11 +1342,12 @@ html[dir=rtl] .newsletter-input{
     /*                      header-caption                        */
 
     /*                               about us section                    */
-    .about-us::before{
+    .about-section::before{
         display: none;
     }
     .about-us{
         padding: 0 15px;
+        padding-top: 78px;
     }
     .about-us .about-p{
         text-align: justify;
@@ -1337,6 +1355,9 @@ html[dir=rtl] .newsletter-input{
     }
     /*                               about us section                    */
     /*                               box-section                         */
+    .box-section{
+        margin-bottom: 20px;
+    }
     .box-link{
         margin-bottom: 15px;
     }
@@ -1346,7 +1367,7 @@ html[dir=rtl] .newsletter-input{
         overflow: hidden;
     }
     .details-box .details-cont{
-        padding: 35px 15px 15px;
+        padding: 261px 15px 15px;
         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
         margin-bottom: 0px;
         background-color: #fff;
